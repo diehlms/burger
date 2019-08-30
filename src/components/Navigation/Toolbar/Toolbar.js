@@ -1,15 +1,17 @@
 import React from 'react';
-import Logo from '../Logo/Logo'
+// import Logo from '../Logo/Logo'
+import NavigationItems from '../NavigationItems/NavigationItems'
+import Hamburger from '../Hamburger/Hamburger'
 import './Toolbar.css'
 
 const toolbar = (props) => (
     <header className='Toolbar'>
-        <div>MENU</div>
-        {/* <div className='Logo'>
-            <Logo />
-        </div> */}
-        <nav>
-            ...
+        <Hamburger 
+            clicked={props.drawerToggleClicked}
+        />
+        {/* <Logo /> */}
+        <nav className='DesktopOnly'>
+            <NavigationItems />
         </nav>
     </header>
 )
