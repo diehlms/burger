@@ -8,7 +8,7 @@ export default function CheckoutSummary(props) {
     return (
         <div className='CheckoutSummary'>
             <h1>Your burger</h1>
-            <div style={{width: '100%', height: '300px', margin: 'auto'}}>
+            <div style={{width: '100%', margin: 'auto'}}>
                 <Burger ingredients={props.ingredients}/>
             </div>
             <Button 
