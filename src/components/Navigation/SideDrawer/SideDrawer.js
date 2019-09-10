@@ -21,7 +21,9 @@ export default function SideDrawer(props) {
             <div className={attachedClasses.join(' ')}>
                 {/* <Logo /> */}
                 <nav>
-                    <NavigationItems />
+                    <NavigationItems 
+                        isAuthenticated={props.isAuth}
+                    />
                 </nav>
             </div>
         </Ax>
