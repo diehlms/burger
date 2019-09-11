@@ -59,7 +59,6 @@ export class BurgerBuilder extends Component {
         }
 
         let orderSummary = null; 
-
         let burger = <Spinner />
 
         if (this.props.ings) {
